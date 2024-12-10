@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #fc5d66;
+  --secondary-color: #ffc05a;
+  --light-color: #f9fafb;
+  --dark-color: #272d35;
+}
+/* Add scroll padding for sections */
+html {
+    scroll-padding-top: 80px; /* Adjust this value based on your navbar height */
+}
+section {
+  padding-top: 100px; /* Adjust according to your navbar height */
+  margin-top: -80px; /* Negative margin compensates for the added padding */
+}
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+
+/* Main Navigation */
+.main-navigation {
+    background: transparent;
+    color: white;
+    padding: 0.8rem 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  .main-navigation.scrolled {
+    background-color: rgba(235, 77, 85, 0.8);
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Navigation Container */
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo */
+  .nav-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Desktop Menu */
+  .desktop-menu .menu-list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-weight: 600;
+  }
+  
+  .desktop-menu .menu-item a {
+    width: 82px;
+    height: 32px;
+    color: #fff;
+  }
+  
+  .desktop-menu .menu-item a:hover {
+    color: var(--secondary-color);
+  }
+  
+  /* Social Icons */
+  .social-item .social-icon {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  /* Mobile Menu */
+  .mobile-menu-wrapper {
+    display: none;
+  }
+  
+  .hamburger-button {
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Mobile Menu Items */
+  .mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0.95;
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .mobile-menu.active {
+    transform: translateX(0);
+  }
+  
+  /* Mobile Menu List */
+  .mobile-menu .mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.2rem;
+  }
+  
