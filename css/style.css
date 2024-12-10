@@ -143,7 +143,7 @@ img {
     font-weight: 600;
   }
 .main_navigation a{
-    width: 81px;
+    width: 85px;
     height: 32px;
     color: #fff;
 }
@@ -152,6 +152,7 @@ img {
   }
  .main_navigation i{
     font-size: 1.5rem;
+    line-height: 1.6;
     
  }
  /* Mobile Menu */
@@ -586,7 +587,7 @@ margin-bottom: 3.2rem;
     }
     
 }
-@media (max-width: 768px){
+@media (max-width: 991px){
  .main_navigation-items{
     display: none;
  }
@@ -595,7 +596,7 @@ margin-bottom: 3.2rem;
  }
  .main_navigation .mobile-menu-toggle {
     display: block;
-    padding: 10px;
+    
    
   }
   .information-container {
