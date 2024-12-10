@@ -315,7 +315,51 @@ img {
     color: var(--secondary-color);
     margin-right: 0.5rem;
   }
-  
+  .takeaways-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    padding: 1.5rem 0;
+  }
+  .takeaways-cards .card {
+    flex-direction: row;
+    text-align: left;
+  }
+  .takeaways-cards .card i {
+    margin-right: 1rem;
+  }
+  .overview .overview-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+  .overview img{
+    width: 100%;
+    max-width: 500px;
+  }
+  .overview h2{
+    font-weight: 700;
+    margin-bottom: .5rem;
+  }
+  .overview p{
+margin: 1rem 0 2rem;
+  }
+  .overview .section-title-border{
+    margin: 0;
+  }
+.overview + .overview .overview-display{
+    flex-direction: row-reverse;
+}
+.overviewul{
+    margin-bottom: 2rem;
+}
+.overview ul li{
+    line-height: 2;
+}
+.overview i{
+    margin-right: .5rem;
+}
   
 @media (max-width: 1200px){
     .banner .banner_section {
@@ -352,10 +396,15 @@ img {
       .courses {
         grid-template-columns: repeat(2, 1fr);
       }
-      .cards
+      .cards,.takeaways-cards
        {
         grid-template-columns: 1fr;
       }
+      .overview-display,
+      .overview + .overview .overview-display{
+        flex-direction: column;
+        gap: 2rem;
+    }
     
 }
 @media (max-width: 768px){

@@ -9,12 +9,12 @@ document.addEventListener('DOMContentLoaded', function () {
   });
     // scrolling
     window.addEventListener('scroll', function () {
-        const navbar = document.querySelector('.main_navigation');
+        const navigate = document.querySelector('.main_navigation');
       
         if (window.scrollY > 0) {
-          navbar.classList.add('main_navigation-scroll');
+          navigate.classList.add('main_navigation-scroll');
         } else {
-          navbar.classList.remove('main_navigation-scroll');
+          navigate.classList.remove('main_navigation-scroll');
         }
       });
   
