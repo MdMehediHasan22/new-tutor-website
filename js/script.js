@@ -7,4 +7,14 @@ document.addEventListener('DOMContentLoaded', function () {
       mobileMenu.classList.toggle('active');
     });
   });
+    // scrolling
+    window.addEventListener('scroll', function () {
+        const navbar = document.querySelector('.main_navigation');
+      
+        if (window.scrollY > 0) {
+          navbar.classList.add('main_navigation-scroll');
+        } else {
+          navbar.classList.remove('main_navigation-scroll');
+        }
+      });
   

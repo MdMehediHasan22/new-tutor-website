@@ -50,6 +50,10 @@ img {
     color: #fff;
     border-color: #fff;
   }
+  .main_navigation.main_navigation-scroll {
+    background-color: rgba(235, 77, 85, 0.8);
+    backdrop-filter: blur(10px);
+  }
 
 .container{
     max-width: 1200px;
@@ -108,7 +112,7 @@ img {
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.3);
   }
 .main_navigation{
-    background: black;
+    background: transparent;
     color: white;
     padding: .8rem 2rem;
     position: fixed;
