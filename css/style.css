@@ -65,6 +65,38 @@ img {
 .container-sm{
     max-width: 1000px;
 }
+.section {
+    margin: 4rem 0;
+  }
+/* Section title */
+.section-title {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .section-title p {
+    font-size: 1.3rem;
+    color: var(--dark-color);
+  }
+  .section-title h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+  } 
+  .section-title-border {
+    width: 64px;
+    height: 4px;
+    background: var(--primary-color);
+    margin: 0 auto 2rem;
+  }
+.text-primary {
+    color: var(--primary-color);
+  } 
+  .text-secondary {
+    color: var(--secondary-color);
+  }  
 .main_navigation{
     background: black;
     color: white;
@@ -178,6 +210,24 @@ img {
     line-height: 1.8;
     font-weight: 400;
   }
+  /* courses */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:2rem;
+    padding: 1rem 0 4rem;
+}
+.course img {
+    transition: transform 0.3s;
+  } 
+  .course img:hover {
+    transform: scale(1.1);
+  } 
+  .course h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+  }
 @media (max-width: 1200px){
     .banner .banner_section {
         gap: 2rem;
@@ -190,6 +240,9 @@ img {
     
       .banner h1 {
         font-size: 3rem;
+      }
+      .courses {
+        grid-template-columns: repeat(3, 1fr);
       }
 
 }
@@ -206,6 +259,9 @@ img {
       .banner img {
         max-width: 600px;
         margin-top: 2rem;
+      }
+      .courses {
+        grid-template-columns: repeat(2, 1fr);
       }
     
 }
@@ -234,6 +290,9 @@ img {
     
       .banner img {
         max-width: 350px;
+      }
+      .courses {
+        grid-template-columns: 1fr;
       }
 }
   
