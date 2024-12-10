@@ -68,6 +68,8 @@ img {
 }
 .container-sm{
     max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 .section {
     margin: 4rem 0;
@@ -477,7 +479,67 @@ margin: 1rem 0 2rem;
     margin: 2rem 0;
     gap: 1rem;
   }
-  
+  /* contact page header */
+  .contact-header {
+    background: var(--primary-color);
+    color: #fff;
+    height: 250px;
+    padding-top: 8rem;
+  }
+  .contact-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .Gmail-form p{
+margin-bottom: 3.2rem;
+  }
+  .Gmail-form input,
+  .Gmail-form textarea{
+    display: block;
+    font-size: medium;
+    font-family: inherit;
+    margin: 1.5rem 0;
+    width: 100%;
+    padding: 1.2rem 1rem;
+    border: 1px solid #ccc;
+  }
+  .Gmail-form textarea{
+    height: 200px;
+  }
+  .Gmail-form .btn{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    font-size: inherit;
+    font-family: inherit;
+  }
+  /* Location By Google Map */
+  .google-map-locate h2{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .google-map-locate p{
+    margin-bottom: 2rem;
+  }
+  .google-map-locate .map{
+    overflow: hidden;
+    position: relative;
+    height: 0;
+    margin-bottom: 3rem;
+    padding-bottom: 50%;
+    border-radius: .25rem;
+
+  }
+  .google-map-locate .map iframe{
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ border: none;
+  }
 @media (max-width: 1200px){
     .banner .banner_section {
         gap: 2rem;
@@ -563,7 +625,7 @@ margin: 1rem 0 2rem;
   .footer {
     padding: 0.5rem 1rem;
   }
-  .footer-flex {
+  .footer-display {
     flex-direction: column;
     text-align: center;
   }
