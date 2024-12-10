@@ -245,16 +245,39 @@ img {
     gap: 2rem;
     padding: 1rem 0 4rem;
   }
-  
   .cards img {
     width: 130px;
     margin-top: 1rem;
-  }
-  
+  } 
   .cards h3 {
     font-size: 1.25rem;
     font-weight: 700;
     margin: 1rem 0;
+  }
+  /* Summary Items */
+  .summary-section {
+    background: var(--light-color);
+    color: var(--dark-color);
+    padding: 4rem 2rem 5rem;
+  }
+  .summary-section .summary-lists {
+    background: #fff;
+    padding: 2rem;
+  }
+  .summary-section .items-title {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 1rem 0;
+  }
+  .summary-section .list-item {
+    padding: 1.4rem 0;
+    border-bottom: 1px solid #f1f4f6;
+  }
+  .summary-section .list-item:last-child {
+    border-bottom: none;
   }
 @media (max-width: 1200px){
     .banner .banner_section {
@@ -325,6 +348,9 @@ img {
       }
       .courses {
         grid-template-columns: 1fr;
+      }
+      .summary-section .container {
+        padding: 0;
       }
 }
   
