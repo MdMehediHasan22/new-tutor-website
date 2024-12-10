@@ -97,6 +97,16 @@ img {
   .text-secondary {
     color: var(--secondary-color);
   }  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1.75rem;
+    background: #fff;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.3);
+  }
 .main_navigation{
     background: black;
     color: white;
@@ -228,6 +238,24 @@ img {
     font-weight: 700;
     margin: 0.5rem 0;
   }
+  /* Cards */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 1rem 0 4rem;
+  }
+  
+  .cards img {
+    width: 130px;
+    margin-top: 1rem;
+  }
+  
+  .cards h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 1rem 0;
+  }
 @media (max-width: 1200px){
     .banner .banner_section {
         gap: 2rem;
@@ -262,6 +290,10 @@ img {
       }
       .courses {
         grid-template-columns: repeat(2, 1fr);
+      }
+      .cards
+       {
+        grid-template-columns: 1fr;
       }
     
 }
