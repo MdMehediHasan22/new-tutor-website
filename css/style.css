@@ -279,6 +279,40 @@ img {
   .summary-section .list-item:last-child {
     border-bottom: none;
   }
+  .information-container {
+    background: url('../images/audience.jpg') top center/cover no-repeat;
+    display: flex;
+  }
+  .information-left {
+    width: 50%;
+  }
+  .information-content{
+    background-color: var(--primary-color);
+    color: #fff;
+    flex:1;
+    padding: 4rem;
+  }
+  .information-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  .information-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  } 
+  .information-content ul li {
+    line-height: 2;
+    font-size: 1.2rem;
+  }
+  
+  .information-content i {
+    color: var(--secondary-color);
+    margin-right: 0.5rem;
+  }
+  
+  
 @media (max-width: 1200px){
     .banner .banner_section {
         gap: 2rem;
@@ -332,6 +366,22 @@ img {
     padding: 10px;
    
   }
+  .information-container {
+    flex-direction: column;
+  }
+
+  .information-content {
+    padding: 2rem;
+  }
+
+  .information-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .information-content p {
+    font-size: 1rem;
+  }
+
 }
 @media (max-width: 576px){
     .banner {
