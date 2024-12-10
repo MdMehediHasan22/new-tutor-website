@@ -469,7 +469,7 @@ margin: 1rem 0 2rem;
     border-top: 1px solid #384653;
     padding: 0.5rem 2rem;
   }
-  .footer-flex {
+  .footer-display {
     display: flex;
     justify-content: space-between;
     align-items: center;
